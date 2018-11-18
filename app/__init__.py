@@ -3,10 +3,10 @@ from flask import Flask
 
 
 def create_app():
-    app = Flask(__name__)
+    # app = Flask(__name__)
     # api = Api(app)
 
-    @app.route('/')
-    def index():
-        return 'INDEX'
-    return app
+    # @app.route('/')
+    # def index():
+    #     return 'INDEX'
+    # return app
