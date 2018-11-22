@@ -8,27 +8,27 @@
 	<script src="nima/static/js/client_control_obras.js">/</script>
 </head>
 <body style="background-image: url(nima/static/img/nima_header_2.jpg); background-repeat:no-repeat;">
-	<div style="border: 5px solid grey; border-radius: 5px; margin-left: 16.5%; margin-top: 4%; background: white; width: 1200px; height: 800px">
-		<button id="btnObtenerInventario" type="button" class="btn btn-secondary" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">
+	<div style="border: 5px solid #000059; border-radius: 5px; box-shadow: 5px 10px 5px #888888; margin-left: 16.5%; margin-top: 4%; background: white; width: 1200px; height: 800px">
+		<button id="btnObtenerInventario" type="button" class="btn btn-primary" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">
 			<a href="agregar_producto" style="color:white">Agregar Productos</a>
 		</button>
-		<button id="btnObtenerProductos" type="button" class="btn btn-secondary" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">
-			<a href="agregar_obra" style="color:white">Inventario</a>
+		<button id="btnObtenerProductos" type="button" class="btn btn-primary" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">
+			<a href="inventario" style="color:white">Inventario</a>
 		</button>
-		<button id="btnObtenerObras" type="button" class="btn btn-secondary" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">
+		<button id="btnObtenerObras" type="button" class="btn btn-primary" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">
 			<a href="control_obras" style="color:white">Control de obras</a>
 		</button>
 		<button type="button" class="btn btn-info" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">
 			<a href="\" style="color:white">Cerrar sesion</a>
 		</button>
-		<div style="width: 400px; height: 300px; padding-top: 10%; padding-left: 20px; float: left;">
+		<div style="width: 400px; height: 10px; padding-top: 10%; margin-left: 10%">
 			<h3>Agregar obra</h3>
 			<input id="textFormNombre" class="form-control" type="text" style="margin-top:10px; margin-bottom: 20px" placeholder="Nombre">
 			<input id="textFormLocalizacion" class="form-control" type="text" style="margin-top:10px; margin-bottom: 20px" placeholder="Localización">
 			<input id="textFormComentarios" class="form-control" type="text" style="margin-top:10px; margin-bottom: 20px" placeholder="Comentarios">
 			<button id="btnAgregarObra" type="button" class="btn btn-primary" style="margin-top:10px; margin-bottom: 20px">Agregar</button>
 		</div>
-		<div style="width: 400px; height: 300px; padding-top: 10%; float: right;">
+		<div style="width: 400px; height: 300px; margin-top:0; margin-right:10%; padding-top:0; float: right;">
 			<h3>Agregar trabajador</h3>
 			<input id="textFormObra" class="form-control" type="text" style="margin-top:10px; margin-bottom: 20px" placeholder="Obra">
 			<input id="textFormNombreTrabajador" class="form-control" type="text" style="margin-top:10px; margin-bottom: 20px" placeholder="Nombre">

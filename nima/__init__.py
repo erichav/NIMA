@@ -41,6 +41,10 @@ def create_app():
     def control_obras():
         return app.send_static_file('control_obras.html')
 
+    @app.route('/vales_entrada_salida')
+    def entrada_salida():
+        return app.send_static_file('VALESENTRADASALIDA.pdf')
+
     @app.before_first_request
     def init_db():
         Database.initialize()

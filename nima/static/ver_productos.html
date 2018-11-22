@@ -8,23 +8,26 @@
 	<script src="nima/static/js/client_productos.js">/</script>
 </head>
 <body style="background-image: url(nima/static/img/nima_header_2.jpg); background-repeat:no-repeat;">
-	<div style="border: 5px solid grey; border-radius: 5px; margin-left: 16.5%; margin-top: 4%; background: white; width: 1200px; height: 800px">
+	<div style="border: 5px solid #000059; border-radius: 5px; box-shadow: 5px 10px 5px #888888; margin-left: 16.5%; margin-top: 4%; background: white; width: 1200px; height: 800px">
 		<div style="width: 100%; min-height: 100px;">
-			<button id="btnObtenerInventario" type="button" class="btn btn-secondary" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">
+			<button id="btnObtenerInventario" type="button" class="btn btn-primary" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">
 				<a href="agregar_producto" style="color:white">Agregar Productos</a>
 			</button>
-			<button id="btnObtenerProductos" type="button" class="btn btn-secondary" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">
+			<button id="btnObtenerProductos" type="button" class="btn btn-primary" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">
 				<a style="color:white">Inventario</a>
 			</button>
-			<button id="btnObtenerObras" type="button" class="btn btn-secondary" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">
+			<button id="btnObtenerObras" type="button" class="btn btn-primary" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">
 				<a href="control_obras" style="color:white">Control de obras</a>
+			</button>
+			<button type="button" class="btn btn-success" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">
+			<a href="vales_entrada_salida" style="color:white">Orden de Entrada/Salida</a>
 			</button>
 			<button type="button" class="btn btn-info" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">
 			<a href="\" style="color:white">Cerrar sesion</a>
-		</button>
+			</button>
 		</div>
 
-		<div id="divInventario" style="padding-top: 5%; padding-left: 20px; float: left; overflow-y:auto;">
+		<div id="divInventario" style="border: 3px solid #000059; border-radius: 8px; padding-top: 5%; font-family:times, serif; font-size: 1.3em; padding-left: 20px; float: left; width: 1000px; margin-left:5%">
 
 		</div>
 	</div>

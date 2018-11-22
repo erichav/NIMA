@@ -5,19 +5,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="login.css">
+	<script src="nima/static/js/login.js">/</script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-firestore.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body style="background-image: url(nima/static/img/nima_header_2.jpg); background-repeat:no-repeat;">
-	<div style="border: 5px solid grey; border-radius: 5px; margin-left: 16.5%; margin-top: 4%; background: white; width: 1200px; height: 800px;">
-		<img src="nima/static/img/google.png" style="display: block; max-width:300px; margin:auto; padding-top:3%;">
-		<h4 style="display: block; margin:auto; padding-left: 33%; padding-top:3%;">Inicie sesión con su cuenta de Google</h4>
-		<input id="textFormCorreo" class="form-control" type="text" style="margin-top:3%; margin-left: 33%; margin-bottom: 3%; max-width:400px;" placeholder="Correo">
-		<input id="textFormContraseña" class="form-control" type="text" style="margin-top:3%; margin-left: 33%; margin-bottom: 3%; max-width:400px;" placeholder="Contraseña">
-		<button id="btnObtenerInventario" type="button" class="btn btn-primary" style="margin-top: 2%; margin-left: 48%; margin-right: 2%; float: left; max-width:400px;">
-				<a href="agregar_producto" style="color:white;">Entrar</a>
-			</button>
-	</div>
-
+	<div style="border: 5px solid #000059; border-radius: 5px; box-shadow: 5px 10px 5px #888888; margin-left: 35%; margin-top: 10%; background: white; width: 500px; height: 400px;">
+		<h4 style="display: block; margin:auto; margin-left: 10%; margin-top:20%;">Inicie sesión con su cuenta de Google</h4>
+		<a href="#" onclick="loginGoogle()"><img src="nima/static/img/signin_google.png" style="display: block; max-width:400px; margin:auto; padding-top:10%;"></a>
 	</div>
 </body>
 </html>

@@ -29,7 +29,7 @@ window.onload = function(){
             return response.json();
         }).then(data => {
             console.log(data);
-            alert("Producto agregado");
+            alert("Producto agregado satisfactoriamente.");
             document.getElementById('textFormNombre').value='';
             document.getElementById('textFormCantidad').value='';
             document.getElementById('textFormObservaciones').value='';
