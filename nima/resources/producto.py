@@ -11,7 +11,7 @@ class Producto(Resource):
                         help="Este campo no puede ser dejado en blanco."
                         )
     parser.add_argument('cantidad',
-                        type=int,
+                        type=str,
                         required=True,
                         help="Este campo no puede ser dejado en blanco."
                         )
