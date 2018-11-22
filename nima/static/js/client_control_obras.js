@@ -9,13 +9,13 @@ window.onload = function(){
         const txtComentarios = document.getElementById('textFormComentarios');
         formElements = {
             "nombre": txtNombre.value,
-            "localizacion": txtLocalizacion.value,
+            "ubicacion": txtLocalizacion.value,
             "comentarios": txtComentarios.value
         }
 
         console.log(formElements)
 
-        fetch('obras', {
+        fetch('obra', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json; charset=utf-8"
@@ -53,7 +53,7 @@ window.onload = function(){
 
         console.log(formElements)
 
-        fetch('trabajadores', {
+        fetch('trabajador', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json; charset=utf-8"
