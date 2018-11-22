@@ -43,7 +43,7 @@ window.onload = function(){
     // obtener productos
     const divInventario = document.getElementById('divInventario');
     const obtenerInventario = document.getElementById('btnObtenerInventario');
-    obtenerInventario.addEventListener('click', function() {  
+    obtenerInventario.addEventListener('click', function() {
         fetch('productos', {
             method: 'GET',
         }).then(response => {

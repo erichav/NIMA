@@ -7,11 +7,16 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<script src="nima/static/js/client_inventario.js">/</script>
 </head>
-<body style="background-image: url(img/nima_header_2.jpg); background-repeat:no-repeat;">
+<body style="background-image: url(nima/static/img/nima_header_2.jpg); background-repeat:no-repeat;">
 	<div style="border: 5px solid grey; border-radius: 5px; margin-left: 16.5%; margin-top: 4%; background: white; width: 1200px; height: 800px">
-		<button id="btnObtenerInventario" a href="inventario.html" type="button" class="btn btn-secondary" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;"></a>Inventario
+		<button id="btnObtenerInventario" type="button" class="btn btn-secondary" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">
+			<a href="inventario" style="color:white">Agregar Productos</a>
 		</button>
-		<button a href="control_obras.html" type="button" class="btn btn-secondary" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">Control de obras
+		<button id="btnObtenerProductos" type="button" class="btn btn-secondary" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">
+			<a href="agregar_producto" style="color:white">Inventario</a>
+		</button>
+		<button a href="control_obras.html" type="button" class="btn btn-secondary" style="margin-top: 2%; margin-left: 2%; margin-right: 2%; float: left;">
+			<a href="control_obras" style="color:white">Control de obras</a>
 		</button>
 		<div style="width: 400px; height: 300px; padding-top: 10%; padding-left: 20px; float: left;">
 			<h3>Agregar producto</h3>
@@ -20,10 +25,7 @@
 			<input id="textFormObservaciones" class="form-control" type="text" style="margin-top:10px; margin-bottom: 20px" placeholder="Observaciones">
 			<button id="btnAgregarProducto" type="button" class="btn btn-primary" style="margin-top:10px; margin-bottom: 20px">Agregar</button>
 		</div>
-		<div id="divInventario">
-			
 
-		</div>
 	</div>
 </body>
 </html>

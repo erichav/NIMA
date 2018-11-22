@@ -25,9 +25,21 @@ def create_app():
     def root():
         return app.send_static_file('index.html')
 
+    @app.route('/login')
+    def login():
+        return app.send_static_file('login.html')
+
     @app.route('/inventario')
     def inventario():
         return app.send_static_file('inventario.html')
+
+    @app.route('/agregar_producto')
+    def agregar_producto():
+        return app.send_static_file('ver_productos.html')
+
+    @app.route('/control_obras')
+    def control_obras():
+        return app.send_static_file('control_obras.html')
 
     @app.before_first_request
     def init_db():
