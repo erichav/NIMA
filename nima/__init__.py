@@ -29,11 +29,11 @@ def create_app():
     def login():
         return app.send_static_file('login.html')
 
-    @app.route('/inventario')
+    @app.route('/agregar_producto')
     def inventario():
         return app.send_static_file('inventario.html')
 
-    @app.route('/agregar_producto')
+    @app.route('/inventario')
     def agregar_producto():
         return app.send_static_file('ver_productos.html')
 

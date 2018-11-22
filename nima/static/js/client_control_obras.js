@@ -1,25 +1,21 @@
 console.log("Client running");
 
 window.onload = function(){
-
-
-
-
-    // Crear un nuevo producto
-    const agregarProducto = document.getElementById('btnAgregarProducto');
-    agregarProducto.addEventListener('click', function() {
+    // Crear una nueva obra
+    const agregarObra = document.getElementById('btnAgregarObra');
+    agregarObra.addEventListener('click', function() {
         const txtNombre = document.getElementById('textFormNombre');
-        const txtCantidad = document.getElementById('textFormCantidad');
-        const txtObservaciones = document.getElementById('textFormObservaciones');
+        const txtLocalizacion = document.getElementById('textFormLocalizacion');
+        const txtComentarios = document.getElementById('textFormComentarios');
         formElements = {
             "nombre": txtNombre.value,
-            "cantidad": txtCantidad.value,
-            "observaciones": txtObservaciones.value
+            "localizacion": txtLocalizacion.value,
+            "comentarios": txtComentarios.value
         }
 
         console.log(formElements)
 
-        fetch('producto', {
+        fetch('obras', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json; charset=utf-8"
@@ -29,34 +25,50 @@ window.onload = function(){
             return response.json();
         }).then(data => {
             console.log(data);
-            alert("Producto agregado");
+            alert("Obra agregada satisfactoriamente.");
             document.getElementById('textFormNombre').value='';
-            document.getElementById('textFormCantidad').value='';
-            document.getElementById('textFormObservaciones').value='';
+            document.getElementById('textFormLocalizacion').value='';
+            document.getElementById('textFormComentarios').value='';
         }).catch(err => {
             console.log(err);
         });
     });
 
 
+    // Crear un nuevo trabajador
+    const agregarTrabajador = document.getElementById('btnAgregarTrabajador');
+    agregarTrabajador.addEventListener('click', function() {
+        const txtObra = document.getElementById('textFormObra');
+        const txtTrabajador = document.getElementById('textFormNombreTrabajador');
+        const txtRol = document.getElementById('textFormRol');
+        const txtCuenta = document.getElementById('textFormCuenta');
+        const txtNSS = document.getElementById('textFormNSS');
+        formElements = {
+            "obra": txtObra.value,
+            "nombre": txtTrabajador.value,
+            "rol": txtRol.value,
+            "no_cuenta": txtCuenta.value,
+            "nss": txtNSS.value
+        }
 
-    // obtener productos
-    const divInventario = document.getElementById('divInventario');
-    const obtenerInventario = document.getElementById('btnObtenerInventario');
-    obtenerInventario.addEventListener('click', function() {
-        fetch('productos', {
-            method: 'GET',
+        console.log(formElements)
+
+        fetch('trabajadores', {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json; charset=utf-8"
+            },
+            body: JSON.stringify(formElements)
         }).then(response => {
             return response.json();
         }).then(data => {
-            var htmlStr = "";
-            for(var i = 0; i < data.length; i++){
-                htmlStr += "Nombre: " + data[i]['nombre'] + "<br>";
-                htmlStr += "Cantidad: " + data[i]['cantidad'] + "<br>";
-                htmlStr += "Observaciones: " + data[i]['observaciones'] + "<br><br>";
-            }
-            divInventario.innerHTML = htmlStr;
-            console.log(htmlStr);
+            console.log(data);
+            alert("Trabajador agregado satisfactoriamente.");
+            document.getElementById('textFormObra').value='';
+            document.getElementById('textFormNombreTrabajador').value='';
+            document.getElementById('textFormRol').value='';
+            document.getElementById('textFormCuenta').value='';
+            document.getElementById('textFormNSS').value='';
         }).catch(err => {
             console.log(err);
         });
